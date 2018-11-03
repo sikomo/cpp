@@ -19,7 +19,7 @@ int main()
         Point b(10,10);
         int i;
         for (i=1; i<=3; i++)
-        { cout << "** Boucle numero " << i << "\n";
+        { cout << "** Boucle tour  numero " << i << "\n";
           Point b(i,2*i); }
         cout << "****** Fin main ******\n";
 }
