@@ -16,7 +16,7 @@ public:
 
 void fct(Point *);
 
-int main()
+int main4()
 {
         Point * adr;
         cout << "****** Debut main ******\n";

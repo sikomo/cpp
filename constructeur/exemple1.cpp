@@ -13,7 +13,7 @@ public:
           cout << " ++ Destructeur d'un point : " << x << " " << y << "\n";
   }};
 Point a(1,1);
-int main()
+int main3()
 {
         cout << "****** Debut main ******\n";
         Point b(10,10);
