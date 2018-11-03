@@ -1,3 +1,7 @@
+/*
+ * copie superficielle
+ */
+
 #include <iostream>
 using namespace std;
 
