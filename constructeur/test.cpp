@@ -1,5 +1,6 @@
 /*
  * copie superficielle
+ * Un commetaire essentiel !
  */
 
 #include <iostream>
