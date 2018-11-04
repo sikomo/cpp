@@ -1,3 +1,7 @@
+/*
+Fichier de test pour le cours héritage multiple.
+*/
+
 #include <iostream>
 using namespace std;
 
