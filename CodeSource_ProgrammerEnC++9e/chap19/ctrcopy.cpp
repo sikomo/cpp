@@ -8,15 +8,15 @@ class point
       cout << "++ point    " << x << " " << y << "\n" ;
     }
     point (const point & p)              // constructeur de recopie
-    { x = p.x ; y = p.y ;        
+    { x = p.x ; y = p.y ;
       cout << "CR point    " << x << " " << y << "\n" ;
     }
 } ;
-class pointcol : public point 
+class pointcol : public point
 {   char coul ;
   public :
     pointcol (int abs=0, int ord=0, int cl=1) : point (abs, ord) // constr usuel
-    { coul = cl ; 
+    { coul = cl ;
       cout << "++ pointcol " << int(coul) << "\n" ;
     }
     pointcol (const pointcol & p) : point (p)  // constructeur de recopie
@@ -31,5 +31,5 @@ void fct (pointcol pc)
 int main()
 {  void fct (pointcol) ;
    pointcol a (2,3,4) ;
-   fct (a) ;                // appel de fct, à qui on transmet a par valeur
+   fct (a) ;                // appel de fct, ï¿½ qui on transmet a par valeur
 }
