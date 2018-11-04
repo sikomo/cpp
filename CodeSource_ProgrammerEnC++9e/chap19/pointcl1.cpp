@@ -1,8 +1,8 @@
 #include <iostream>
-#include "point.h"     // incorporation des déclarations de point
+#include "point.h"     // incorporation des dï¿½clarations de point
 using namespace std ;
-       /* --- Déclaration et définition de la classe pointcol ----- */
-class pointcol : public point        // pointcol dérive de point
+       /* --- Dï¿½claration et dï¿½finition de la classe pointcol ----- */
+class pointcol : public point        // pointcol dï¿½rive de point
 {  short couleur ;
  public :
    void colore (short cl)  { couleur = cl ; }
