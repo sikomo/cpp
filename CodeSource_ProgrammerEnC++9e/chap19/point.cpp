@@ -1,26 +1,26 @@
 #include <iostream>
 using namespace std ;
 
-       /* ------------ Déclaration de la classe point ------------- */
+       /* ------------ Dï¿½claration de la classe point ------------- */
 class point
-{              /* déclaration des membres privés */
+{              /* dï¿½claration des membres privï¿½s */
   private :
     int x ;
     int y ;
-              /* déclaration des membres publics */
+              /* dï¿½claration des membres publics */
   public :
     void initialise (int, int) ;
     void deplace (int, int) ;
-    void affiche () ;
+    void affiche () const ;
 } ;
 
-     /* ----- Définition des fonctions membres de la classe point ---- */
+     /* ----- Dï¿½finition des fonctions membres de la classe point ---- */
 void point::initialise (int abs, int ord)
-{    
+{
     x = abs ; y = ord ;
 }
 void point::deplace (int dx, int dy)
-{  
+{
     x = x + dx ; y = y + dy ;
 }
 void point::affiche () const
