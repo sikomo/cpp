@@ -2,6 +2,8 @@
 #include "point.h"
 using namespace std ;
 
+/* komo */
+
        /* ------------ D�claration de la classe point ------------- */
 /*class point
 {              //d�claration des membres priv�s
