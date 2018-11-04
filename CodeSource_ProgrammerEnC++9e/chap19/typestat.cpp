@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std ;
 class point
-{ protected :            // pour que x et y soient accessibles à pointcol
+{ protected :            // pour que x et y soient accessibles ï¿½ pointcol
    int x, y ;
   public :
    point (int abs=0, int ord=0) { x=abs ; y=ord ; }
    void affiche ()
      { cout << "Je suis un point \n" ;
-       cout << "   mes coordonnees sont : " << x << " " << y << "\n" ; 
+       cout << "   mes coordonnees sont : " << x << " " << y << "\n" ;
      }
 } ;
 class pointcol : public point
@@ -15,7 +15,7 @@ class pointcol : public point
    short couleur ;
   public :
    pointcol (int abs=0, int ord=0, short cl=1) : point (abs, ord)
-     { couleur = cl ; 
+     { couleur = cl ;
      }
    void affiche ()
      { cout << "Je suis un point colore \n" ;
@@ -28,6 +28,6 @@ int main()
    pointcol pc (8,6,2) ; pointcol * adpc = &pc ;
    adp->affiche () ; adpc->affiche () ;
    cout << "-----------------\n" ;
-   adp = adpc ;             //  adpc = adp serait rejeté
+   adp = adpc ;             //  adpc = adp serait rejetï¿½
    adp->affiche () ; adpc->affiche () ;
 }
