@@ -1,0 +1,82 @@
+Exercice 1
+===========
+
+Réaliser une classe point permettant de manipuler un point d'un plan.on prévoira :
+
+-un point est définit par ses coordonnées x et y (des membres privés)
+
+-un constructeur (vous pouvez également implémenter les trois types de constructeur)
+
+-une fonction membre déplace effectuant une translation définie par ses deux arguments dx et dy (double)
+
+-une fonction membre affiche se contentant d'afficher les coordonnées cartésiennes du point.
+
+-une fonction membre saisir se contentant de saisir les coordonnées cartésiennes du point.
+
+-une fonction membre distance effectuant calculant la distance entre deux point.
+
+-une fonction membre milieu donnant le milieu d'un segment.
+
+on écrira séparément:
+
+-un ficher source constituant la déclaration et la définition de la classe.
+
+-un petit programme d'essai (main) gérant la classe point.
+
+
+Exercice 2
+===========
+
+1/ On voudrait gérer les étudiants d’une institution à l’aide d’une classe Etudiant définie par :
+
+les attributs suivants :
+
+- nom : nom d’un étudiant
+
+- prénom: prénom d’un étudiant
+
+- tabnotes : tableau contenant les notes d’un étudiant, sachant qu’un étudiant a au total 10 notes.
+
+les méthodes suivantes :
+
+- void saisie (), permettant la saisie d’un étudiant
+
+- void affichage (), permettant l’affichage d’un étudiant
+
+- float moyenne (), retourne comme résultat la moyenne des notes d’un étudiant.
+
+- int admis (), retourne comme résultat la valeur 1, si un étudiant est admis et la valeur 0, sinon. Un étudiant est considéré comme étant
+
+admis lorsque la moyenne de ses notes est supérieure ou égale à 10.
+
+- int exae_quo (Etudiant E), retourne comme résultat la valeur 1, si deux étudiants ont la même moyenne et la valeur 0, sinon.
+
+Ecrire la classe Etudiant dans le langage C++.
+
+2/ On voudrait maintenant représenter, à l’aide d’une nouvelle classe Etudiant_en_Maitrise, certains étudiants particuliers dans cette
+
+institution qui sont les étudiants en dernière année d’études. Ces étudiants possèdent en effet un attribut supplémentaire : note_memoire,
+
+qui représente la note de leur mémoire de fin d’études.
+
+Les méthodes à associer à cette classe sont les suivantes :
+
+- void saisie (), permettant la saisie d’un étudiant en maîtrise
+
+- void affichage (), permettant l’affichage d’un étudiant en maîtrise
+
+- float moyenne (), retourne comme résultat la moyenne des notes d’un étudiant en maîtrise
+
+- int admis (), retourne comme résultat la valeur 1, si un étudiant est admis et la valeur 0, sinon. Un étudiant en maîtrise est considéré
+
+comme étant admis lorsque, d’une part, la moyenne de ses notes est supérieure ou égale à 10 et d’autre part la note obtenue pour son mémoire
+
+de fin d’études est supérieure ou égale à 10.
+
+- int exae_quo (Etudiant_en_Maitrise E), retourne comme résultat la valeur 1, si deux étudiants ont d’une part la même moyenne et d’autre
+
+part, la même note de mémoire et retourne la valeur 0, sinon.
+
+a) Quelles sont les méthodes qui sont à redéfinir dans la classe Etudiant_en_Maitrise ?
+
+b) Ecrire la classe Etudiant_en_Maitrise dans le langage C++.
