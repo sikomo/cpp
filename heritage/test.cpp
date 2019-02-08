@@ -11,7 +11,7 @@ public:
   }
 
   void affiche() const{
-    cout << x << " , " << y;
+    cout << x << " , " << y << endl;
   }
 };
 
@@ -25,10 +25,21 @@ public:
   void colore(short cl){
     color = cl;
   }
+
+  void affiche (){
+    Point::affiche();
+      cout << "La couleur est : " << color << endl;
+  }
 };
 
 int main(){
   PointCol pc1(10, 1, 2);
+  pc1.affiche();
+  pc1.colore(20);
+  pc1.affiche();
+  pc1.colore(30);
+  pc1.affiche();
+  pc1.colore(40);
   pc1.affiche();
   return 0;
 }
