@@ -7,7 +7,11 @@ class point
      { cout << "++ Constr. point " << abs << " " << ord << "\n" ;
        x=abs ; y=ord ;
      }
+<<<<<<< HEAD
    point ()  // constr. par dï¿½faut nï¿½cessaire pour dï¿½rivations virtuelles
+=======
+   point ()  // constr. par défaut nécessaire pour dérivations virtuelles
+>>>>>>> 186ed450f73d81e27871fc5117b084585b42ceb3
      { cout << "++ Constr. defaut point \n" ; x=0 ; y=0 ; }
    void affiche () const
     { cout << "Coordonnees : " << x << " " << y << "\n" ;
@@ -40,7 +44,11 @@ class masse
 class pointcoul : public virtual point, public coul
 { public :
     pointcoul (int abs, int ord, int cl) : coul (cl)
+<<<<<<< HEAD
       // pas dï¿½info pour point car dï¿½rivation virtuelle
+=======
+      // pas d’info pour point car dérivation virtuelle
+>>>>>>> 186ed450f73d81e27871fc5117b084585b42ceb3
     { cout << "++++ Constr. pointcoul " << abs << " " << ord << " "
                                         << cl << "\n" ;
     }
@@ -52,8 +60,13 @@ class pointcoul : public virtual point, public coul
 class pointmasse : public virtual point, public masse
 { public :
     pointmasse (int abs, int ord, int m) : masse (m)
+<<<<<<< HEAD
      // pas dï¿½info pour point car dï¿½rivation virtuelle
     { cout << "++++ Constr. pointmasse " << abs << " " << ord << " "
+=======
+     // pas d’info pour point car dérivation virtuelle
+    { cout << "++++ Constr. pointmasse " << abs << " " << ord << " " 
+>>>>>>> 186ed450f73d81e27871fc5117b084585b42ceb3
                                          << m << "\n" ;
     }
     void affiche () const
@@ -66,7 +79,11 @@ class pointcolmasse : public pointcoul, public pointmasse
     pointcolmasse (int abs, int ord, short c, int m) : point (abs, ord),
       pointcoul (abs, ord, c), pointmasse (abs, ord, m)
       // infos abs ord en fait inutiles pour pointcol et pointmasse
+<<<<<<< HEAD
     { cout << "++++ Constr. pointcolmasse " << abs << " " << ord << " "
+=======
+    { cout << "++++ Constr. pointcolmasse " << abs + " " << ord << " "
+>>>>>>> 186ed450f73d81e27871fc5117b084585b42ceb3
                                             << c << " " << m << "\n" ;
     }
     void affiche () const
